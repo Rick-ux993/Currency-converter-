@@ -61,3 +61,6 @@ function showTrend(currentRate) {
 
   previousRate = currentRate;
 }
+setInverval(() => {
+  convert();
+}, 10000); // every 10 seconds
